@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :notices
+  resources :rules
   resources :residents
   resources :parks
   resources :users
