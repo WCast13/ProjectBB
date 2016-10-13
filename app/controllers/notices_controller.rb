@@ -12,6 +12,10 @@ class NoticesController < ApplicationController
   def show
   end
 
+  def seven_day
+    render template: 'notices/seven_day'
+  end
+
   # GET /notices/new
   def new
     @notice = Notice.new
