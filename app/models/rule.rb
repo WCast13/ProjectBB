@@ -1,3 +1,3 @@
 class Rule < ApplicationRecord
-  belongs_to :park
+  belongs_to :parks
 end

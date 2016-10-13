@@ -1,6 +1,8 @@
 class Park < ApplicationRecord
-  has_many :users
+  belongs_to :user
   has_many :residents
   has_many :notices
-  belongs_to :user 
+  has_many :rules
+
+    # has_many :users
 end
