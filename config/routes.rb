@@ -5,11 +5,11 @@ Rails.application.routes.draw do
   resources :parks
   resources :users
 
-  get 'ParksHomepage' => 'application#parks_homepage'
-  get 'ResidentsHomepage' => 'application#residents_homepage'
-  get 'NoticesHomepage' => 'application#notices_homepage'
-  get 'RulesHomepage' => 'application#rules_homepage'
-  
+  get 'ParksHomepage' => 'static_pages#parks_homepage'
+  get 'ResidentsHomepage' => 'static_pages#residents_homepage'
+  get 'NoticesHomepage' => 'static_pages#notices_homepage'
+  get 'RulesHomepage' => 'static_pages#rules_homepage'
+
   root 'users#homepage'
   get 'notices/seven_day'
   get 'notices/thirty_day'
