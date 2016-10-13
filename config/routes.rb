@@ -5,6 +5,6 @@ Rails.application.routes.draw do
   resources :parks
   resources :users
 
-  root 'notices#seven_day'
+  root 'users#homepage'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

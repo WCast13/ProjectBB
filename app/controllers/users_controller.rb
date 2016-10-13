@@ -12,6 +12,10 @@ class UsersController < ApplicationController
   def show
   end
 
+  def homepage
+    render template: 'users/homepage'
+  end
+
   # GET /users/new
   def new
     @user = User.new
