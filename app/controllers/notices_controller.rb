@@ -16,6 +16,9 @@ class NoticesController < ApplicationController
     render template: 'notices/seven_day'
   end
 
+  def thirty_day
+    render template: 'notices/thirty_day'
+  end
   # GET /notices/new
   def new
     @notice = Notice.new
