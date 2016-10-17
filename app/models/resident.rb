@@ -1,3 +1,3 @@
 class Resident < ApplicationRecord
-  belongs_to :parks
+  belongs_to :park
 end
