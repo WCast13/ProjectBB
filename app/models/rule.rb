@@ -1,3 +1,4 @@
 class Rule < ApplicationRecord
-  belongs_to :parks
+  belongs_to :park
+  has_many   :notices
 end
